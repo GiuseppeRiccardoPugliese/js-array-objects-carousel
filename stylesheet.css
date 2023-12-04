@@ -63,6 +63,25 @@ button i {
 }
 
 /*************************************************
+    TEXT FOR THE IMG SETUP
+ *************************************************/
+#carousel-title {
+    text-align: right;
+    color: #fff;
+    /* position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%); */
+}
+
+#carousel-text {
+    text-align: right;
+    color: #fff;
+    /* position: absolute;
+    bottom: 0; */
+}
+
+/*************************************************
     FIX IMG
  *************************************************/
 .item {
