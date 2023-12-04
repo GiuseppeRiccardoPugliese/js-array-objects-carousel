@@ -63,23 +63,16 @@ button i {
 }
 
 /*************************************************
-    TEXT FOR THE IMG SETUP
+    CONTENITORE PER LA DESCRIZIONE DELLE IMG (title & text)
  *************************************************/
-#carousel-title {
-    text-align: right;
+.description_img {
     color: #fff;
-    /* position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translate(-50%); */
+    position: absolute;
+    bottom: 15%;
+    right: 0;
+    text-align: right;
 }
 
-#carousel-text {
-    text-align: right;
-    color: #fff;
-    /* position: absolute;
-    bottom: 0; */
-}
 
 /*************************************************
     FIX IMG

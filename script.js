@@ -33,11 +33,14 @@ images.forEach((element, index) => {
 
     let cardClass = (index === 0) ? "item active" : "item"
 
+    //Riempio la mia pagina dinamicamente
     contenitoreCarousel.innerHTML += `
     <div class="${cardClass}">
     <img class="fix_img" src=${element.image} alt="">
-    <h2 id="carousel-title">${element.title}</h2>
-    <p id="carousel-text">${element.text}</p>
+        <div class="description_img">    
+            <h2>${element.title}</h2>
+            <p>${element.text}</p>
+        </div>
     </div>
     `
 
@@ -79,6 +82,10 @@ downBtn.addEventListener("click", function () {
         //     downBtn.classList.add('hidden');
         // }
 
+    } else if (activeItem === items.length - 1) { //CICLO INFINITO
+        items[activeItem].classList.remove('active');
+        activeItem = 0;
+        items[activeItem].classList.add('active');
     }
 }
 )
@@ -105,6 +112,10 @@ upBtn.addEventListener("click", function () {
         //     upBtn.classList.add('hidden');
         // }
 
+    } else if (activeItem === 0) {  //CICLO INFINITO
+        items[activeItem].classList.remove('active');
+        activeItem = 4;
+        items[activeItem].classList.add('active');
     }
 }
 )
